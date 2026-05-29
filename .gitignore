@@ -1,0 +1,34 @@
+# ── Secrets — never commit ──────────────────────────────────────────────
+tools/api/keys.env
+tools/api/keys.fingerprint.json
+tools/api/keys.env.enc
+tools/api/keys.env.salt
+tools/api/usage.json
+*.env
+!*.env.example
+
+# ── User data ───────────────────────────────────────────────────────────
+profile/writer.md
+profile/writing-style.md
+
+# ── Generated article work (keep the folder, not the contents) ───────────
+articles/*
+!articles/.gitkeep
+
+# ── macOS / editors ─────────────────────────────────────────────────────
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# ── Python ──────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# ── Large local caches ──────────────────────────────────────────────────
+.whisper-models/
+*-frames/
+*-images/

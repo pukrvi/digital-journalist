@@ -1,0 +1,20 @@
+{
+  "duckduckgo": {"tier": "keyless", "limit": null, "period": "unlimited", "best_for": "general fallback, unlimited"},
+  "jina_reader": {"tier": "keyless", "limit": 200, "period": "day", "best_for": "URL → clean text + SERP via prefix"},
+  "langsearch": {"tier": "free", "limit": null, "period": "unspecified", "best_for": "open-source LLM-grounding"},
+  "brave": {"tier": "free", "limit": 2000, "period": "month", "best_for": "independent privacy-focused index + AI summarizer"},
+  "tavily": {"tier": "free", "limit": 1000, "period": "month", "best_for": "AI-ready context aggregation"},
+  "serper": {"tier": "free", "limit": 2500, "period": "one-time", "best_for": "fast Google SERP"},
+  "serpapi": {"tier": "free", "limit": 100, "period": "month", "best_for": "comprehensive Google results"},
+  "exa": {"tier": "free", "limit": 1000, "period": "credits-one-time", "best_for": "semantic / neural search"},
+  "firecrawl": {"tier": "free", "limit": 500, "period": "month", "best_for": "LLM-ready scraping + search"},
+  "google_cse": {"tier": "free", "limit": 100, "period": "day", "best_for": "Google's own results, controlled scope"},
+  "you_com": {"tier": "free", "limit": 100, "period": "day", "best_for": "real-time web intelligence"},
+  "newsapi": {"tier": "free", "limit": 100, "period": "day", "best_for": "news from 150k+ sources"},
+  "gemini": {"tier": "free", "limit": 1500, "period": "day", "best_for": "Gemini Flash with Google Search grounding"},
+  "cohere": {"tier": "free", "limit": 1000, "period": "month", "best_for": "Command R+ with web-search connector"},
+  "perplexity": {"tier": "paid", "limit": null, "period": "pay-as-go", "best_for": "sonar deep research, well-cited"},
+  "openai_search": {"tier": "paid", "limit": null, "period": "pay-as-go", "best_for": "gpt-4o-search-preview, deep research"},
+  "anthropic_search": {"tier": "paid", "limit": null, "period": "pay-as-go", "best_for": "Claude with web-search tool"},
+  "xai_grok": {"tier": "paid", "limit": null, "period": "pay-as-go", "best_for": "Grok deep search, X/Twitter signal"}
+}

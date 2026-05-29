@@ -1,0 +1,33 @@
+Digital Journalist
+Copyright 2026 INFINITIGRID TECHNOLOGIES (OPC) PRIVATE LIMITED
+
+Created by Puneet Vishnawat.
+
+This product is licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License. A copy of the
+License is provided in the LICENSE file and at:
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+You are free to use, modify, and distribute this software under the terms of the
+License. The source code remains the copyrighted property of INFINITIGRID
+TECHNOLOGIES (OPC) PRIVATE LIMITED. Redistributions — including modified versions —
+must retain this copyright notice, the LICENSE file, and this NOTICE.
+
+----------------------------------------------------------------------------------
+Third-party components
+
+This project orchestrates, but does not redistribute, a number of third-party tools
+and services, each governed by its own license and terms:
+
+  - Python libraries (installed at runtime): ddgs, trafilatura, wikipedia-api, arxiv,
+    feedparser, pdfplumber, pymupdf, python-docx, openpyxl, python-pptx, ebooklib,
+    pandas, numpy, scipy, markdownify, yt-dlp, and others — see scripts/README.md.
+  - System tools (installed by the user): ffmpeg, whisper.cpp, ripgrep, jq.
+  - Search & AI providers (used only with the user's own API keys): DuckDuckGo,
+    Brave Search, Tavily, Serper, SerpApi, Exa, Firecrawl, Google (Programmable
+    Search & Gemini), You.com, NewsAPI, LangSearch, Jina, Cohere, Perplexity,
+    OpenAI, Anthropic, and xAI. Use of each is subject to that provider's terms.
+
+The user is responsible for complying with the terms of any provider whose API key
+they supply, and with the terms of service and robots policies of any site fetched.

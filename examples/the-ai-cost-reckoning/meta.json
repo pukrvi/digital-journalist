@@ -1,0 +1,25 @@
+{
+  "topic": "The AI cost reckoning: does replacing workers with AI actually save money?",
+  "slug": "the-ai-cost-reckoning-does-replacing-workers-with-ai-actuall",
+  "audience": "policy-aware general reader following the AI-and-work debate",
+  "stance": "neutral referee",
+  "timestamp": "2026-05-29",
+  "recoveryNote": "finished via dj-finisher after the original run aborted on a StructuredOutput miss; research salvaged intact",
+  "lensesApplied": [
+    "mainstream",
+    "contrarian",
+    "data",
+    "historical",
+    "stakeholders",
+    "expert",
+    "comparative",
+    "followthemoney"
+  ],
+  "counts": {
+    "articleWords": 3682,
+    "citations": 28,
+    "masterWords": 10816,
+    "lensFiles": 12
+  },
+  "recommendedTitle": "Does AI Actually Save Money Replacing Workers? The 2026 Reckoning"
+}
