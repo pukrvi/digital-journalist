@@ -200,4 +200,4 @@ Licensed under the **[Apache License 2.0](LICENSE)** — free to use, modify, an
 **Created by Puneet Vishnawat.**
 Source code © 2026 **INFINITIGRID TECHNOLOGIES (OPC) PRIVATE LIMITED**. See [NOTICE](NOTICE).
 
-Inspired by the "boil the ocean" methodology Garry Tan described for garrys.org.
+Inspired by the "boil the ocean" methodology [Garry Tan](https://github.com/garrytan) described for [garryslist.org](https://garryslist.org/).
