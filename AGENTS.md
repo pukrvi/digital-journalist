@@ -13,7 +13,17 @@ and writes a fully-cited, NYT/WSJ/Bloomberg-grade article in the user's voice. I
 
 If `profile/writer.md` is missing, onboard first. Run the playbook **[onboarding/onboard.md](onboarding/onboard.md)**:
 1. Who they are → 2. Writing style → 3. Upload a sample (extrapolate voice) → 4. Pick search providers → 5. Add API keys.
-Check progress with `python3 onboarding/onboard.py status`. In Claude Code use the `/onboard` command.
+Check progress with `python3 onboarding/onboard.py status`. In Claude Code use the `/onboard` command (or `/digital-journalist <topic>` once onboarded).
+
+## Slash commands
+
+Two slash commands ship with the repo, in `.claude/commands/`:
+
+- **`/onboard`** — runs the 5-step onboarding playbook.
+- **`/digital-journalist <topic>`** — runs the full two-stage research → write protocol with both rounds of clarifying questions in the conversation.
+
+**Claude Code** loads them automatically from `.claude/commands/` when the agent starts in this repo.
+**Codex CLI** reads slash commands from `~/.codex/prompts/` (user-level only) — run `bash scripts/install-slash-commands.sh` once to copy them there. Other agents without a slash system: the markdown files are plain prompts; the body is the spec you should follow when the user says "run the digital journalist on X."
 
 ## Running a job (two stages, two rounds of questions)
 

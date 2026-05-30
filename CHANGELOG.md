@@ -2,6 +2,15 @@
 
 All notable changes to the Digital Journalist. Format loosely follows [Keep a Changelog](https://keepachangelog.com/).
 
+## [3.0.1] — 2026-05-30
+
+### Added
+- **`/digital-journalist <topic>` slash command** (`.claude/commands/digital-journalist.md`) — auto-loaded
+  by Claude Code from the repo. Runs the full two-stage protocol (Round 1 scope → research workflow →
+  Round 2 voice/POV → write workflow) directly from a slash, instead of typing the natural-language prompt.
+- **`scripts/install-slash-commands.sh`** — copies `.claude/commands/*.md` into `~/.codex/prompts/` so
+  `/digital-journalist` and `/onboard` also work in OpenAI Codex CLI (which only supports user-level prompts).
+
 ## [3.0.0] — 2026-05-29
 
 The productization + reliability release.

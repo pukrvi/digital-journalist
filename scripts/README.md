@@ -11,6 +11,7 @@ For light-weight web search and URL fetching, see [`../tools/`](../tools/) (shel
 | **Setup** | | |
 | `setup.sh` | Install all deps (Python, ffmpeg, whisper-cpp, whisper model) | `bash scripts/setup.sh` |
 | `check_deps.py` | Verify what's installed | `python3 scripts/check_deps.py` |
+| `install-slash-commands.sh` | Copy `.claude/commands/*.md` to `~/.codex/prompts/` so `/digital-journalist` + `/onboard` work in Codex CLI | `bash scripts/install-slash-commands.sh` |
 | `detect_filetype.py` | Identify file via magic bytes | `scripts/detect_filetype.py mystery.bin` |
 | **Reading formats** | | |
 | `read_pdf.py` | PDF text + tables | `read_pdf.py report.pdf --pages 1-10 --tables` |

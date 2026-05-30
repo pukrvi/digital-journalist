@@ -63,17 +63,22 @@ The Digital Journalist runs *inside* an AI coding agent. Install one, open this 
 npm install -g @anthropic-ai/claude-code     # or: curl -fsSL https://claude.ai/install.sh | bash
 cd digital-journalist && claude              # launch the agent in the repo
 ```
-Then, inside Claude Code:
-- **`/onboard`** — the 5-step setup (auto-loaded from `.claude/commands/`).
-- **`Run the digital-journalist on: <your topic>`** — runs the two-stage engine (the `digital-journalist`
-  named workflow → `dj-write`), pausing for the two rounds of questions.
+Both slash commands are auto-loaded from `.claude/commands/`:
+- **`/onboard`** — the 5-step setup (~5 min).
+- **`/digital-journalist <topic>`** — runs the two-stage engine (the `digital-journalist`
+  research workflow → `dj-write`), pausing for the two rounds of clarifying questions.
 
 ### OpenAI Codex CLI
 ```bash
 npm install -g @openai/codex                 # or: brew install --cask codex
-cd digital-journalist && codex               # reads AGENTS.md on launch
+cd digital-journalist
+bash scripts/install-slash-commands.sh       # copies .claude/commands/* into ~/.codex/prompts/
+codex                                        # reads AGENTS.md on launch
 ```
-Then type: **`Onboard me`** (runs `onboarding/onboard.md`), then **`Write a digital-journalist article on: <topic>`**.
+The install step makes the same slash commands work in Codex: **`/onboard`** and
+**`/digital-journalist <topic>`**. (Codex's prompts directory is user-level only, so this
+one-time copy is the bridge.) Without it, type **`Onboard me`** and
+**`Write a digital-journalist article on: <topic>`** — same flow, just no shortcut.
 
 ### Openclaw / other agents
 Install per the agent's own docs, open this folder, and say **`Read AGENTS.md and onboard me`**. Any agent
@@ -154,6 +159,8 @@ protect them, and we're honest about it:
 digital-journalist.workflow.js   Stage 1 — research engine (named skill via .claude/workflows/)
 dj-write.workflow.js             Stage 2 — schema-free writer (finish a run or spin a new angle)
 CLAUDE.md / AGENTS.md            operating manuals for AI agents
+.claude/commands/                /onboard and /digital-journalist slash command files (Claude Code)
+scripts/install-slash-commands.sh  copies the slash commands into ~/.codex/prompts/ for Codex CLI
 onboarding/                      onboard.md playbook + onboard.py · keys_manager.py · analyze_style.py
 profile/                         your writer.md + writing-style.md (gitignored; templates tracked)
 tools/                           search.sh · fetch.sh · wiki.sh · arxiv.sh · feed.sh
