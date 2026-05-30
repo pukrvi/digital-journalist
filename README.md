@@ -4,7 +4,7 @@
 
 **An agentic, self-improving newsroom that does the work of a high-quality investigative journalist.**
 
-Give it a topic. It reads the ocean — 15–25 sources across 6–8 lenses — adversarially fact-checks the
+Give it a topic. It reads the ocean — 100+ sources across 6–8 lenses — adversarially fact-checks the
 load-bearing claims, then writes a fully-cited, NYT/WSJ/Bloomberg-grade article *in your voice*.
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
@@ -28,7 +28,7 @@ your AI coding agent (Claude Code, Codex, Openclaw) and uses **free search APIs 
 ## ✨ What makes it different
 
 - **Boil the ocean.** 6–8 research lenses in parallel (mainstream, **contrarian (mandatory)**, data,
-  historical, stakeholder, expert, comparative, follow-the-money), each gathering 6–10 sources.
+  historical, stakeholder, expert, comparative, follow-the-money), each gathering 10+ sources.
 - **Adversarial verification.** Before writing, it extracts the 8–12 load-bearing claims and *tries to
   refute each one* — catching the conflated, viral, and single-tweet "facts" that fool one-pass tools.
 - **Authoritative sources first.** A hard mandate to reach for government/agency data, peer-reviewed work,
