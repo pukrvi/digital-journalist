@@ -48,7 +48,7 @@ your AI coding agent (Claude Code, Codex, Openclaw) and uses **free search APIs 
 installs everything else (ffmpeg, whisper.cpp, ripgrep, and the Python libraries).
 
 ```bash
-git clone https://github.com/<your-org>/digital-journalist.git && cd digital-journalist
+git clone https://github.com/pukrvi/digital-journalist.git && cd digital-journalist
 bash scripts/setup.sh           # Python libs + ffmpeg + whisper.cpp + ripgrep + whisper model
 python3 scripts/check_deps.py   # verify everything is green
 ```

@@ -11,6 +11,12 @@ All notable changes to the Digital Journalist. Format loosely follows [Keep a Ch
 - **`scripts/install-slash-commands.sh`** — copies `.claude/commands/*.md` into `~/.codex/prompts/` so
   `/digital-journalist` and `/onboard` also work in OpenAI Codex CLI (which only supports user-level prompts).
 
+### Fixed
+- **README clone command** had a leftover `<your-org>` placeholder — replaced with the real
+  `https://github.com/pukrvi/digital-journalist.git` so copy-paste works.
+- **`scripts/setup.sh` skipped installing `ripgrep` and `jq`** even though README claimed it installs
+  ripgrep and `check_deps.py` requires both. Added a step that `brew install`s them when missing.
+
 ## [3.0.0] — 2026-05-29
 
 The productization + reliability release.
